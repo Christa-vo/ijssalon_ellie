@@ -19,12 +19,8 @@ def onderstreep(tekst=""):
     uit.append(len(tekst) * "=")
     return uit
 
-from boekhouding import inkomsten
-
 def bereken_totaal(inkomsten):
     totaal = 0
-    for item, bedrag in inkomsten.items:
+    for item, bedrag in inkomsten.items():
         totaal += bedrag
     return totaal
-
-print(bereken_totaal(inkomsten))
